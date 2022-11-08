@@ -9,17 +9,19 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
   </head>
 
-  <body>
+  <script src="./script.js"></script>
+  <body style="margin: 0; overflow: hidden;">
     <a-scene
       vr-mode-ui="enabled: false"
+      embedded
       arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
     >
-      <a-text
+      <!-- <a-text
         value="This content will always face you."
-        look-at="[gps-camera]"
+        embedded
         scale="120 120 120"
         gps-entity-place="latitude: 37.8723654; longitude: -122.2609140;"
-      ></a-text>
+      ></a-text> -->
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
